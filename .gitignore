@@ -70,3 +70,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Tower of Hanoi AR/Packages/com.ptc.vuforia.engine-10.25.4.tgz
+/Tower of Hanoi AR/Library/ShaderCache
+*.log
+/Tower of Hanoi AR/Library/PackageCache
+/Tower of Hanoi AR/Library/Bee/CachedNodeOutput
+/Tower of Hanoi AR/Library/Artifacts
+/Tower of Hanoi AR/Library/Bee/artifacts
