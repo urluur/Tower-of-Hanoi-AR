@@ -27,14 +27,6 @@ public class DiskDragHandler : MonoBehaviour
                         originalPosition = transform.position;
                         Debug.Log("Started dragging " + transform.name);
                     }
-                    else
-                    {
-                        Debug.Log("Raycast hit, but not this object: " + hit.transform.name);
-                    }
-                }
-                else
-                {
-                    Debug.Log("Raycast did not hit any object.");
                 }
             }
             else if (touch.phase == TouchPhase.Moved && isDragging)
@@ -49,13 +41,21 @@ public class DiskDragHandler : MonoBehaviour
                 FindNearestStick();
                 if (nearestStick != null)
                 {
-                    // Snap to the nearest stick, if rules are followed
-                    transform.position = nearestStick.position;
-                    Debug.Log("Dropped " + transform.name + " on " + nearestStick.name);
+                    Transform topDisk = GetTopDisk(nearestStick);
+                    if (IsValidMove(nearestStick, topDisk))
+                    {
+                        // Place the disk correctly on the stick
+                        PlaceDisk(nearestStick, topDisk);
+                        Debug.Log("Dropped " + transform.name + " on " + nearestStick.name);
+                    }
+                    else
+                    {
+                        transform.position = originalPosition;
+                        Debug.Log("Returned " + transform.name + " to original position");
+                    }
                 }
                 else
                 {
-                    // Return to original position if no valid stick is found
                     transform.position = originalPosition;
                     Debug.Log("Returned " + transform.name + " to original position");
                 }
@@ -71,26 +71,30 @@ public class DiskDragHandler : MonoBehaviour
         foreach (Transform stick in GameObject.Find("sticks").transform)
         {
             float distance = Vector3.Distance(transform.position, stick.position);
-            if (distance < minDistance && IsValidMove(stick))
+            if (distance < minDistance && IsValidMove(stick, GetTopDisk(stick)))
             {
                 minDistance = distance;
                 nearestStick = stick;
             }
         }
+    }
 
-        if (nearestStick != null)
+    private bool IsValidMove(Transform stick, Transform topDisk)
+    {
+        if (topDisk == null)
         {
-            Debug.Log("Nearest stick found: " + nearestStick.name);
+            return true;
         }
         else
         {
-            Debug.Log("No valid stick found.");
+            float currentDiskSize = transform.localScale.x;
+            float topDiskSize = topDisk.localScale.x;
+            return currentDiskSize < topDiskSize;
         }
     }
 
-    private bool IsValidMove(Transform stick)
+    private Transform GetTopDisk(Transform stick)
     {
-        // Get the topmost disk on the stick
         Transform topDisk = null;
         foreach (Transform child in stick)
         {
@@ -100,18 +104,17 @@ public class DiskDragHandler : MonoBehaviour
                     topDisk = child;
             }
         }
+        return topDisk;
+    }
 
-        if (topDisk == null)
+    private void PlaceDisk(Transform stick, Transform topDisk)
+    {
+        float newY = stick.position.y;
+        if (topDisk != null)
         {
-            return true; // The stick is empty, valid move
+            newY = topDisk.position.y + topDisk.localScale.y;
         }
-        else
-        {
-            // Check if the current disk is smaller than the top disk
-            float currentDiskSize = transform.localScale.x;
-            float topDiskSize = topDisk.localScale.x;
-
-            return currentDiskSize < topDiskSize;
-        }
+        transform.position = new Vector3(stick.position.x, newY, stick.position.z);
+        transform.SetParent(stick);
     }
 }
