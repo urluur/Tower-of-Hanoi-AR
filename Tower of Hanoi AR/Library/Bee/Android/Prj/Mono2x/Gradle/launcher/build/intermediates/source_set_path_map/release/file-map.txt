@@ -1,0 +1,11 @@
+com.DefaultCompany.TowerofHanoiAR.launcher-jetified-VuforiaEngine-0 /Users/urlu/.gradle/caches/transforms-3/6135f6524eb6d9f538a6704936ffd9bf/transformed/jetified-VuforiaEngine/res
+com.DefaultCompany.TowerofHanoiAR.launcher-jetified-core-1.36.0-1 /Users/urlu/.gradle/caches/transforms-3/d5e017fbc646108d278d9d065862a3b2/transformed/jetified-core-1.36.0/res
+com.DefaultCompany.TowerofHanoiAR.launcher-pngs-2 /Users/urlu/Developer/repos/Tower-of-Hanoi-AR/Tower of Hanoi AR/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/generated/res/pngs/release
+com.DefaultCompany.TowerofHanoiAR.launcher-resValues-3 /Users/urlu/Developer/repos/Tower-of-Hanoi-AR/Tower of Hanoi AR/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/generated/res/resValues/release
+com.DefaultCompany.TowerofHanoiAR.launcher-rs-4 /Users/urlu/Developer/repos/Tower-of-Hanoi-AR/Tower of Hanoi AR/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/generated/res/rs/release
+com.DefaultCompany.TowerofHanoiAR.launcher-mergeReleaseResources-5 /Users/urlu/Developer/repos/Tower-of-Hanoi-AR/Tower of Hanoi AR/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.DefaultCompany.TowerofHanoiAR.launcher-mergeReleaseResources-6 /Users/urlu/Developer/repos/Tower-of-Hanoi-AR/Tower of Hanoi AR/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.DefaultCompany.TowerofHanoiAR.launcher-merged_res-7 /Users/urlu/Developer/repos/Tower-of-Hanoi-AR/Tower of Hanoi AR/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/merged_res/release
+com.DefaultCompany.TowerofHanoiAR.launcher-main-8 /Users/urlu/Developer/repos/Tower-of-Hanoi-AR/Tower of Hanoi AR/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res
+com.DefaultCompany.TowerofHanoiAR.launcher-release-9 /Users/urlu/Developer/repos/Tower-of-Hanoi-AR/Tower of Hanoi AR/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/release/res
+com.DefaultCompany.TowerofHanoiAR.launcher-packaged_res-10 /Users/urlu/Developer/repos/Tower-of-Hanoi-AR/Tower of Hanoi AR/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/packaged_res/release

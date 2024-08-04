@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="tower" size="2.000000 1.507736" />
+    <ImageTarget name="rizbica" size="1.000000 0.629114" />
+  </Tracking>
+</QCARConfig>

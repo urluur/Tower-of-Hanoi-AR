@@ -27,6 +27,14 @@ public class DiskDragHandler : MonoBehaviour
                         originalPosition = transform.position;
                         Debug.Log("Started dragging " + transform.name);
                     }
+                    else
+                    {
+                        Debug.Log("Raycast hit, but not this object: " + hit.transform.name);
+                    }
+                }
+                else
+                {
+                    Debug.Log("Raycast did not hit any object.");
                 }
             }
             else if (touch.phase == TouchPhase.Moved && isDragging)
@@ -41,11 +49,13 @@ public class DiskDragHandler : MonoBehaviour
                 FindNearestStick();
                 if (nearestStick != null)
                 {
+                    // Snap to the nearest stick, if rules are followed
                     transform.position = nearestStick.position;
                     Debug.Log("Dropped " + transform.name + " on " + nearestStick.name);
                 }
                 else
                 {
+                    // Return to original position if no valid stick is found
                     transform.position = originalPosition;
                     Debug.Log("Returned " + transform.name + " to original position");
                 }
@@ -67,10 +77,20 @@ public class DiskDragHandler : MonoBehaviour
                 nearestStick = stick;
             }
         }
+
+        if (nearestStick != null)
+        {
+            Debug.Log("Nearest stick found: " + nearestStick.name);
+        }
+        else
+        {
+            Debug.Log("No valid stick found.");
+        }
     }
 
     private bool IsValidMove(Transform stick)
     {
+        // Get the topmost disk on the stick
         Transform topDisk = null;
         foreach (Transform child in stick)
         {
@@ -83,10 +103,11 @@ public class DiskDragHandler : MonoBehaviour
 
         if (topDisk == null)
         {
-            return true;
+            return true; // The stick is empty, valid move
         }
         else
         {
+            // Check if the current disk is smaller than the top disk
             float currentDiskSize = transform.localScale.x;
             float topDiskSize = topDisk.localScale.x;
 
