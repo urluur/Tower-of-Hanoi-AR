@@ -1,7 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - DiskDragHandler
+    - DiskHandler
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -286,39 +286,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16732}
-    - Class: 114
       Script: {instanceID: 16734}
     - Class: 114
-      Script: {instanceID: 16776}
+      Script: {instanceID: 16736}
     - Class: 114
-      Script: {instanceID: 16898}
+      Script: {instanceID: 16778}
     - Class: 114
-      Script: {instanceID: 17724}
+      Script: {instanceID: 16900}
     - Class: 114
-      Script: {instanceID: 17822}
+      Script: {instanceID: 17726}
     - Class: 114
-      Script: {instanceID: 18136}
+      Script: {instanceID: 17824}
     - Class: 114
-      Script: {instanceID: 18184}
+      Script: {instanceID: 18138}
     - Class: 114
-      Script: {instanceID: 18424}
+      Script: {instanceID: 18186}
     - Class: 114
-      Script: {instanceID: 18592}
+      Script: {instanceID: 18426}
     - Class: 114
-      Script: {instanceID: 19478}
+      Script: {instanceID: 18594}
     - Class: 114
       Script: {instanceID: 19480}
     - Class: 114
       Script: {instanceID: 19482}
     - Class: 114
-      Script: {instanceID: 19524}
+      Script: {instanceID: 19484}
     - Class: 114
       Script: {instanceID: 19526}
     - Class: 114
-      Script: {instanceID: 19568}
+      Script: {instanceID: 19528}
     - Class: 114
-      Script: {instanceID: 19574}
+      Script: {instanceID: 19570}
     - Class: 114
       Script: {instanceID: 19576}
     - Class: 114
@@ -326,21 +324,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19580}
     - Class: 114
-      Script: {instanceID: 19602}
+      Script: {instanceID: 19582}
     - Class: 114
       Script: {instanceID: 19604}
     - Class: 114
-      Script: {instanceID: 19610}
+      Script: {instanceID: 19606}
     - Class: 114
-      Script: {instanceID: 20394}
+      Script: {instanceID: 19612}
     - Class: 114
-      Script: {instanceID: 20440}
+      Script: {instanceID: 20396}
     - Class: 114
-      Script: {instanceID: 20746}
+      Script: {instanceID: 20442}
     - Class: 114
-      Script: {instanceID: 21978}
+      Script: {instanceID: 20748}
     - Class: 114
-      Script: {instanceID: 22428}
+      Script: {instanceID: 21980}
+    - Class: 114
+      Script: {instanceID: 22430}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -478,10 +478,10 @@ ScriptsOnlyBuild:
     className: UnityOnBecameVisibleMessageListener
   - hash:
       serializedVersion: 2
-      Hash: d481c639b5c965b3e105a888e0b569f2
+      Hash: bda338c17264ffdca51bf8bbb7b7fa22
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: DiskDragHandler
+    className: DiskHandler
   - hash:
       serializedVersion: 2
       Hash: e987953190eb4c12cf19df790566dc2c

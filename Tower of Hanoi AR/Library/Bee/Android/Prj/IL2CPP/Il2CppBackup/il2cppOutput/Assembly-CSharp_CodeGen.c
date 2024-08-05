@@ -12,36 +12,30 @@
 
 
 
-extern void DiskDragHandler_Update_mE22829B236CB7BE108DFE200C904451D4D86D792 (void);
-extern void DiskDragHandler_FindNearestStick_m8C21E6A0E61995281C4925151AE1935AD93B2748 (void);
-extern void DiskDragHandler_IsValidMove_m7B12A41FDB03709CA1A5A8BE6181B679B4A6B660 (void);
-extern void DiskDragHandler_GetTopDisk_m5C6A9455386356135A7807812383BF19EAD1E07B (void);
-extern void DiskDragHandler_IsTopmostDisk_m877BCBC44B5918A6702B7A860C9C8C11AF25FDBA (void);
-extern void DiskDragHandler__ctor_mB4C60277002AA55EDD1B4E6F3B270AABEA2AB9CA (void);
+extern void DiskHandler_Update_m7D136D93F223AB431C64803EB3D810B4F4BDFCDC (void);
+extern void DiskHandler_SelectDisk_m58E85C974C20DD24938767009EBCBF8B5BCDDA0B (void);
+extern void DiskHandler_MoveDisk_m99DEE740D813521F32E47E37012F984ED1B3BD95 (void);
+extern void DiskHandler__ctor_m907744CE233BB4F702C7A80EA865F204E649D9BF (void);
 extern void VuforiaLicense_GetLicenseKey_m796D51E5EF1C53F3D62BA4EA8806AC1FB1A5E3C4 (void);
 extern void VuforiaLicense__ctor_m094B92B3323DFFD79ADB696474D5D158C95E291B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[10] = 
+static Il2CppMethodPointer s_methodPointers[8] = 
 {
-	DiskDragHandler_Update_mE22829B236CB7BE108DFE200C904451D4D86D792,
-	DiskDragHandler_FindNearestStick_m8C21E6A0E61995281C4925151AE1935AD93B2748,
-	DiskDragHandler_IsValidMove_m7B12A41FDB03709CA1A5A8BE6181B679B4A6B660,
-	DiskDragHandler_GetTopDisk_m5C6A9455386356135A7807812383BF19EAD1E07B,
-	DiskDragHandler_IsTopmostDisk_m877BCBC44B5918A6702B7A860C9C8C11AF25FDBA,
-	DiskDragHandler__ctor_mB4C60277002AA55EDD1B4E6F3B270AABEA2AB9CA,
+	DiskHandler_Update_m7D136D93F223AB431C64803EB3D810B4F4BDFCDC,
+	DiskHandler_SelectDisk_m58E85C974C20DD24938767009EBCBF8B5BCDDA0B,
+	DiskHandler_MoveDisk_m99DEE740D813521F32E47E37012F984ED1B3BD95,
+	DiskHandler__ctor_m907744CE233BB4F702C7A80EA865F204E649D9BF,
 	VuforiaLicense_GetLicenseKey_m796D51E5EF1C53F3D62BA4EA8806AC1FB1A5E3C4,
 	VuforiaLicense__ctor_m094B92B3323DFFD79ADB696474D5D158C95E291B,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[10] = 
+static const int32_t s_InvokerIndices[8] = 
 {
 	6359,
-	6359,
-	3676,
-	4507,
-	6161,
+	5055,
+	5055,
 	6359,
 	9317,
 	6359,
@@ -52,7 +46,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	10,
+	8,
 	s_methodPointers,
 	0,
 	NULL,
