@@ -12,31 +12,49 @@
 
 
 
-extern void DiskHandler_Update_m7D136D93F223AB431C64803EB3D810B4F4BDFCDC (void);
-extern void DiskHandler_SelectDisk_m58E85C974C20DD24938767009EBCBF8B5BCDDA0B (void);
-extern void DiskHandler_MoveDisk_m99DEE740D813521F32E47E37012F984ED1B3BD95 (void);
+extern void DiskHandler_OnMouseDown_m2F8A95414D264DACE2A5428ACFC6F436C6F0AA09 (void);
+extern void DiskHandler_OnMouseUp_m7870428F4F1E22FD7F9A2FDBCAFE2B478A49724D (void);
+extern void DiskHandler_MoveToStick_m6334A865BCD32F259DA0D9FBCF28A359EB846DA1 (void);
 extern void DiskHandler__ctor_m907744CE233BB4F702C7A80EA865F204E649D9BF (void);
+extern void U3CMoveToStickU3Ed__5__ctor_mA6191270B8283FBFF17C945F82CEA3174EB9BEB4 (void);
+extern void U3CMoveToStickU3Ed__5_System_IDisposable_Dispose_m9E050F956FBAD1238FE13107D3E8095A5A0B2AAA (void);
+extern void U3CMoveToStickU3Ed__5_MoveNext_m3807CC2F24CA4CEFC4A525F9CFC052A0B87F565E (void);
+extern void U3CMoveToStickU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1A1C67780C48816CEC84170861B687267E2A7C0D (void);
+extern void U3CMoveToStickU3Ed__5_System_Collections_IEnumerator_Reset_m8D08D74B9292EF84255B3AEE6BD0681A77E363E5 (void);
+extern void U3CMoveToStickU3Ed__5_System_Collections_IEnumerator_get_Current_m8C94C90512799ADB8EE64B817F993A2B99893797 (void);
 extern void VuforiaLicense_GetLicenseKey_m796D51E5EF1C53F3D62BA4EA8806AC1FB1A5E3C4 (void);
 extern void VuforiaLicense__ctor_m094B92B3323DFFD79ADB696474D5D158C95E291B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[8] = 
+static Il2CppMethodPointer s_methodPointers[14] = 
 {
-	DiskHandler_Update_m7D136D93F223AB431C64803EB3D810B4F4BDFCDC,
-	DiskHandler_SelectDisk_m58E85C974C20DD24938767009EBCBF8B5BCDDA0B,
-	DiskHandler_MoveDisk_m99DEE740D813521F32E47E37012F984ED1B3BD95,
+	DiskHandler_OnMouseDown_m2F8A95414D264DACE2A5428ACFC6F436C6F0AA09,
+	DiskHandler_OnMouseUp_m7870428F4F1E22FD7F9A2FDBCAFE2B478A49724D,
+	DiskHandler_MoveToStick_m6334A865BCD32F259DA0D9FBCF28A359EB846DA1,
 	DiskHandler__ctor_m907744CE233BB4F702C7A80EA865F204E649D9BF,
+	U3CMoveToStickU3Ed__5__ctor_mA6191270B8283FBFF17C945F82CEA3174EB9BEB4,
+	U3CMoveToStickU3Ed__5_System_IDisposable_Dispose_m9E050F956FBAD1238FE13107D3E8095A5A0B2AAA,
+	U3CMoveToStickU3Ed__5_MoveNext_m3807CC2F24CA4CEFC4A525F9CFC052A0B87F565E,
+	U3CMoveToStickU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1A1C67780C48816CEC84170861B687267E2A7C0D,
+	U3CMoveToStickU3Ed__5_System_Collections_IEnumerator_Reset_m8D08D74B9292EF84255B3AEE6BD0681A77E363E5,
+	U3CMoveToStickU3Ed__5_System_Collections_IEnumerator_get_Current_m8C94C90512799ADB8EE64B817F993A2B99893797,
 	VuforiaLicense_GetLicenseKey_m796D51E5EF1C53F3D62BA4EA8806AC1FB1A5E3C4,
 	VuforiaLicense__ctor_m094B92B3323DFFD79ADB696474D5D158C95E291B,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[8] = 
+static const int32_t s_InvokerIndices[14] = 
 {
 	6359,
-	5055,
-	5055,
 	6359,
+	4511,
+	6359,
+	5027,
+	6359,
+	6161,
+	6247,
+	6359,
+	6247,
 	9317,
 	6359,
 	9365,
@@ -46,7 +64,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	8,
+	14,
 	s_methodPointers,
 	0,
 	NULL,

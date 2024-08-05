@@ -478,7 +478,7 @@ ScriptsOnlyBuild:
     className: UnityOnBecameVisibleMessageListener
   - hash:
       serializedVersion: 2
-      Hash: bda338c17264ffdca51bf8bbb7b7fa22
+      Hash: a2b2926ab7e31cf781b39707f425e9ce
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: DiskHandler
