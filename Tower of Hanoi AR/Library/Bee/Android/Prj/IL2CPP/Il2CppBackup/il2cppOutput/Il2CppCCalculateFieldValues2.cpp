@@ -10587,6 +10587,7 @@ struct DiskDragHandler_t7CE729F09DA24CC227E809EA8E3170798B3F8E20  : public MonoB
 	bool ___isDragging;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___nearestStick;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___originalPosition;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___originalParent;
 };
 struct EventTrigger_tAEBFB7A16CA99343EA87722F78884BF8646BAE1B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -16190,9 +16191,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8019[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8020[6] = 
 {
 	static_cast<int32_t>(offsetof(RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, ___m_Centroid)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, ___m_Point)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, ___m_Normal)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, ___m_Distance)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, ___m_Fraction)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, ___m_Collider)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8027[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8027[5] = 
 {
-	static_cast<int32_t>(offsetof(DiskDragHandler_t7CE729F09DA24CC227E809EA8E3170798B3F8E20, ___offset)),static_cast<int32_t>(offsetof(DiskDragHandler_t7CE729F09DA24CC227E809EA8E3170798B3F8E20, ___isDragging)),static_cast<int32_t>(offsetof(DiskDragHandler_t7CE729F09DA24CC227E809EA8E3170798B3F8E20, ___nearestStick)),static_cast<int32_t>(offsetof(DiskDragHandler_t7CE729F09DA24CC227E809EA8E3170798B3F8E20, ___originalPosition)),};
+	static_cast<int32_t>(offsetof(DiskDragHandler_t7CE729F09DA24CC227E809EA8E3170798B3F8E20, ___offset)),static_cast<int32_t>(offsetof(DiskDragHandler_t7CE729F09DA24CC227E809EA8E3170798B3F8E20, ___isDragging)),static_cast<int32_t>(offsetof(DiskDragHandler_t7CE729F09DA24CC227E809EA8E3170798B3F8E20, ___nearestStick)),static_cast<int32_t>(offsetof(DiskDragHandler_t7CE729F09DA24CC227E809EA8E3170798B3F8E20, ___originalPosition)),static_cast<int32_t>(offsetof(DiskDragHandler_t7CE729F09DA24CC227E809EA8E3170798B3F8E20, ___originalParent)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8028[1] = 
 {
 	0,};
