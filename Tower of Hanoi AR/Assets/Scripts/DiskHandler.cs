@@ -97,7 +97,7 @@ public class DiskHandler : MonoBehaviour
         }
     }
 
-    private void ResetGame()
+private void ResetGame()
     {
         isGameWon = false;
 
@@ -106,8 +106,9 @@ public class DiskHandler : MonoBehaviour
         {
             DiskHandler diskScript = disk.GetComponent<DiskHandler>();
             disk.transform.parent = GameObject.Find("Left").transform;
-            diskScript.transform.localPosition = new Vector3(-1f, diskScript.transform.localPosition.y, diskScript.transform.localPosition.z); // Set local x to -1
-            disk.GetComponent<Renderer>().material.color = originalColor;
+            diskScript.transform.localPosition = new Vector3(-1f, diskScript.transform.localPosition.y, diskScript.transform.localPosition.z);
+            diskScript.renderer.material.color = diskScript.originalColor;
+            diskScript.isSelected = false;
         }
     }
 }
