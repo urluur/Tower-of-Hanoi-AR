@@ -246,6 +246,8 @@ MonoBehaviour:
   isSelected: 0
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
+  winColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  diskSize: 3
 --- !u!65 &5090689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -265,7 +267,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0000001, y: 1, z: 1.0000002}
+  m_Size: {x: 0.7, y: 1, z: 0.7}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &150111373
 GameObject:
@@ -497,6 +499,8 @@ MonoBehaviour:
   isSelected: 0
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
+  winColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  diskSize: 2
 --- !u!65 &177135696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -516,7 +520,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1.0000001}
+  m_Size: {x: 0.7, y: 1, z: 0.7}
   m_Center: {x: 0.00000005960464, y: 0, z: -0.00000008940696}
 --- !u!1 &190690167
 GameObject:
@@ -656,8 +660,8 @@ GameObject:
   - component: {fileID: 193961501}
   - component: {fileID: 193961500}
   - component: {fileID: 193961499}
-  - component: {fileID: 193961502}
   - component: {fileID: 193961503}
+  - component: {fileID: 193961502}
   m_Layer: 0
   m_Name: Stick left
   m_TagString: Stick
@@ -674,8 +678,8 @@ Transform:
   m_GameObject: {fileID: 193961497}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 0.25, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.25, z: 0.05}
+  m_LocalPosition: {x: -1, y: 0.5, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.5, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 245100658}
@@ -954,8 +958,8 @@ Transform:
   m_GameObject: {fileID: 869987257}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0.25, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.25, z: 0.05}
+  m_LocalPosition: {x: 1, y: 0.5, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.5, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1394947378}
@@ -1261,8 +1265,8 @@ Transform:
   m_GameObject: {fileID: 1586607820}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.25, z: 0.05}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.5, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1495711859}
@@ -1506,6 +1510,8 @@ MonoBehaviour:
   isSelected: 0
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
+  winColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  diskSize: 1
 --- !u!65 &1634904575
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1525,7 +1531,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0000001, y: 1, z: 1.0000002}
+  m_Size: {x: 0.7, y: 1, z: 0.7}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &1831817748
 GameObject:
