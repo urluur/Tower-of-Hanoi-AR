@@ -657,6 +657,7 @@ GameObject:
   - component: {fileID: 193961500}
   - component: {fileID: 193961499}
   - component: {fileID: 193961502}
+  - component: {fileID: 193961503}
   m_Layer: 0
   m_Name: Stick left
   m_TagString: Stick
@@ -771,7 +772,28 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 2, z: 2}
+  m_Size: {x: 5, y: 0.1, z: 5}
+  m_Center: {x: 0.1, y: -1, z: -15}
+--- !u!65 &193961503
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193961497}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &245100657
 GameObject:
@@ -915,6 +937,7 @@ GameObject:
   - component: {fileID: 869987260}
   - component: {fileID: 869987259}
   - component: {fileID: 869987262}
+  - component: {fileID: 869987263}
   m_Layer: 0
   m_Name: Stick right
   m_TagString: Stick
@@ -1031,6 +1054,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!65 &869987263
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869987257}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 0.1, z: 5}
+  m_Center: {x: 0.000000059604645, y: -0.9, z: -15}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1244,7 @@ GameObject:
   - component: {fileID: 1586607823}
   - component: {fileID: 1586607822}
   - component: {fileID: 1586607825}
+  - component: {fileID: 1586607826}
   m_Layer: 0
   m_Name: Stick middle
   m_TagString: Stick
@@ -1316,6 +1361,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!65 &1586607826
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586607820}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 0.1, z: 5}
+  m_Center: {x: 0.000000059604645, y: -0.9, z: -15}
 --- !u!1 &1634904569
 GameObject:
   m_ObjectHideFlags: 0
