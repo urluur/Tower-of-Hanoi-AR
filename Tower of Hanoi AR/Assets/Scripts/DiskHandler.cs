@@ -9,7 +9,7 @@ public class DiskHandler : MonoBehaviour
     private Renderer renderer;
     private GameObject[] sticks;
     private bool isGameWon = false;
-    private float initialDiskX;
+    public int diskOrder; // Added to determine disk order
     public float diskSize;
 
     private void Start()
@@ -18,8 +18,8 @@ public class DiskHandler : MonoBehaviour
         originalColor = renderer.material.color;
         sticks = GameObject.FindGameObjectsWithTag("Stick");
 
-        // Store initial disk x position
-        initialDiskX = transform.localPosition.x;
+        // Assign disk order based on position (adjust if needed)
+        diskOrder = transform.GetSiblingIndex();
     }
 
     private void OnMouseDown()
@@ -82,22 +82,24 @@ public class DiskHandler : MonoBehaviour
         Transform topDisk = stick.transform.GetChild(stick.transform.childCount - 1);
         DiskHandler topDiskScript = topDisk.GetComponent<DiskHandler>();
 
-        return diskSize < topDiskScript.diskSize;
+        return diskOrder < topDiskScript.diskOrder;
     }
 
     private void CheckWinCondition()
     {
-        if (sticks[1].transform.childCount == 3)
+        GameObject[] disks = GameObject.FindGameObjectsWithTag("Disk");
+
+        if (sticks[1].transform.childCount == disks.Length)
         {
             isGameWon = true;
-            foreach (GameObject disk in GameObject.FindGameObjectsWithTag("Disk"))
+            foreach (GameObject disk in disks)
             {
                 disk.GetComponent<Renderer>().material.color = winColor;
             }
         }
     }
 
-private void ResetGame()
+    private void ResetGame()
     {
         isGameWon = false;
 
