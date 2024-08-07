@@ -247,7 +247,7 @@ MonoBehaviour:
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   winColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  diskOrder: 0
+  diskOrder: 4
   diskSize: 4
 --- !u!65 &5090689
 BoxCollider:
@@ -343,7 +343,7 @@ MonoBehaviour:
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   winColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  diskOrder: 0
+  diskOrder: 1
   diskSize: 1
 --- !u!136 &142142839
 CapsuleCollider:
@@ -649,7 +649,7 @@ MonoBehaviour:
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   winColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  diskOrder: 0
+  diskOrder: 3
   diskSize: 3
 --- !u!65 &177135696
 BoxCollider:
@@ -750,13 +750,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: dragon
+  mTrackableName: tower
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/KlenData.xml
-  mAspectRatio: 0.866894
+  mDataSetPath: Vuforia/towerofhanoi.xml
+  mAspectRatio: 0.753868
   mImageTargetType: 0
-  mWidth: 1
-  mHeight: 0.866894
+  mWidth: 2
+  mHeight: 1.507736
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -793,8 +793,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 190690169}
   mHiddenRoot: {fileID: 0}
-  mTargetName: dragon
-  mDatasetName: Vuforia/KlenData.xml
+  mTargetName: tower
+  mDatasetName: Vuforia/towerofhanoi.xml
   mCastedBehaviour: {fileID: 190690169}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -1662,7 +1662,7 @@ MonoBehaviour:
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   winColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  diskOrder: 0
+  diskOrder: 2
   diskSize: 2
 --- !u!65 &1634904575
 BoxCollider:
