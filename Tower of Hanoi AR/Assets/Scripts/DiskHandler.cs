@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DiskHandler : MonoBehaviour
@@ -9,7 +10,7 @@ public class DiskHandler : MonoBehaviour
     private Renderer renderer;
     private GameObject[] sticks;
     private bool isGameWon = false;
-    public int diskOrder; // Added to determine disk order
+    public int diskOrder;
     public float diskSize;
 
     private void Start()
@@ -18,7 +19,6 @@ public class DiskHandler : MonoBehaviour
         originalColor = renderer.material.color;
         sticks = GameObject.FindGameObjectsWithTag("Stick");
 
-        // Assign disk order based on position (adjust if needed)
         diskOrder = transform.GetSiblingIndex();
     }
 
@@ -32,7 +32,7 @@ public class DiskHandler : MonoBehaviour
 
         if (!isSelected)
         {
-            // Check if clicked object is topmost
+            // check if clicked object is on top
             if (transform.parent == null || !transform.parent.CompareTag("Disk"))
             {
                 isSelected = true;
@@ -53,7 +53,7 @@ public class DiskHandler : MonoBehaviour
                     GameObject stick = hit.collider.gameObject;
                     if (CanPlaceDiskOnStick(stick))
                     {
-                        // Snapping behavior
+                        // snapping behavior
                         float snapDistance = 0.1f;
                         if (Vector3.Distance(transform.position, stick.transform.position) < snapDistance)
                         {
@@ -85,6 +85,8 @@ public class DiskHandler : MonoBehaviour
         return diskOrder < topDiskScript.diskOrder;
     }
 
+    private Coroutine winCoroutine;
+
     private void CheckWinCondition()
     {
         GameObject[] disks = GameObject.FindGameObjectsWithTag("Disk");
@@ -92,12 +94,20 @@ public class DiskHandler : MonoBehaviour
         if (sticks[1].transform.childCount == disks.Length)
         {
             isGameWon = true;
-            foreach (GameObject disk in disks)
-            {
-                disk.GetComponent<Renderer>().material.color = winColor;
-            }
+            winCoroutine = StartCoroutine(WinDelay());
         }
     }
+
+    private IEnumerator WinDelay()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        foreach (GameObject disk in GameObject.FindGameObjectsWithTag("Disk"))
+        {
+            disk.GetComponent<Renderer>().material.color = winColor;
+        }
+    }
+
 
     private void ResetGame()
     {
