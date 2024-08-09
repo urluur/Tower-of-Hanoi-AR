@@ -1,4 +1,0 @@
-repository "Tower of Hanoi AR@Tower_of_Hanoi@cloud"
-  path "/"
-    br "/main"
-    co "/main"
